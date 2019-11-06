@@ -10,7 +10,8 @@ export class SlackService {
     private options = {
         headers: new HttpHeaders(
             { 'Content-Type': 'application/x-www-form-urlencoded' }
-        )
+        ),
+        responseType: 'text' as 'json'
     };
 
     constructor(private http: HttpClient) { }
